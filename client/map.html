@@ -1,0 +1,36 @@
+<head>
+  <title>reactive-maps-example</title>
+</head>
+
+<body>
+  {{> map}}
+  {{> instruments}}
+  {{> demo}}
+</body>
+
+<template name="map">  
+  <div class="map-container">
+
+    {{#unless geolocationError}}
+      {{> googleMap name="map" options=mapOptions}}
+    {{else}}
+      Geolocation failed: {{geolocationError}}
+    {{/unless}}
+  </div>
+</template>
+
+<template name="instruments">
+  <div class="inst-container">
+    <p>Noeud : {{speed}}</p>
+    <p>Lat : {{lat}} Lng : {{lng}}</p>
+    <p>Altitude : {{alt}}</p>
+
+    <p>{{coor}}</p>
+  </div>
+	
+</template>
+
+
+<template name = "demo">
+   <button>START DEMO</button>
+</template>
