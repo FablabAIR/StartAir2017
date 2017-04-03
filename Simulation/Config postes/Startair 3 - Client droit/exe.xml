@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<SimBase.Document Type="Launch" version="1,0">
+	<Descr>Launch</Descr>
+	<Filename>exe.xml</Filename>
+	<Disabled>False</Disabled>
+	<Launch.ManualLoad>False</Launch.ManualLoad>
+	<Launch.Addon>
+		<Name>CameraTool</Name>
+		<Disabled>False</Disabled>
+		<ManualLoad>False</ManualLoad>
+		<Path>C:\Users\Start'Air 3\Desktop\Lancement startair_Safe\CameraTool.exe</Path>
+	</Launch.Addon>
+	<Launch.Addon>
+		<Name>CameraTool</Name>
+		<Disabled>False</Disabled>
+		<ManualLoad>False</ManualLoad>
+		<Path>C:\Users\Start'Air 3\Desktop\Lancement startair_Safe\client.exe</Path>
+	</Launch.Addon>
+</SimBase.Document>

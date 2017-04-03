@@ -1,0 +1,63 @@
+source :https://github.com/will421/StartAir_Safe
+
+
+Installation : (une partie des fichier se trouve dans Necessaire FSX)
+1-Installer daemon tools (si il ne l'est pas)
+2-Monter l'image CD "FSX Disk1.mdf"
+3-Lancer l'installation du disque 1
+4-Lorsque demandé par l'installation, monter l'image CD "FSX Disk2.mdf" et continuer l'installation
+5-Installer les services packs fdx_sp1 puis fdx_sp2
+6-Monter de nouveau le CD 1, aller dans le dossier SDK et lancer le setup.exe à l'interieur.
+7-Installer les services packs pour le sdk (fsx_sdk_sp1a puis "sdk.msi")
+8-Aller dans le dossier d'installation de FSX SDK puis SDK/Core Utilities Kit/lib/ et lancer SimConnect.msi
+
+Mise en place du programme :
+client.exe,server.exe et CameraTool.exe peuvent être lancer une fois que FSX est lancé.
+En cas de probleme, c'est que soit, il manque une dll, dans ce cas là, la deposer à coté des .exe soit qu'il y a une erreur dans le safe.cfg
+Le safe.cfg doit etre dans le meme dossier que les .exe à moins de vouloir que les .exe se lancent automatiquement (voir ci apres)
+
+Mise en place du programme pour qu'il demarre automatiquement :
+Dans l'outil Exécuter : taper "%appdata%" (sans les guillemets), puis ouvrir Microsoft\FSX.
+Y deposer le "exe.xml" fournit puis l'ouvrir et modifier les path(chemin) des programmes client.exe,server.exe et CameraTool.exe.
+Il faut qu'il y ai soit server.exe soit client.exe dans un exe.xml, pas les deux. La machine lancant le server.exe
+doit etre celle où sont branché les commandes.
+Deposer safe.cfg dans le dossier d'installation de FSX
+Au premier lancement, FSX demandera si il peut avoir confiance en ces modules, repondre oui.
+Dans les parametres generaux, decocher "Afficher l'ecran d'acceuil"
+
+Faire que FSX se lance avec windows :
+Copier un raccourcide FSX dans le menu Demarrer->Tous les programmes->Démarrage
+
+Faire que FSX lance le bon vol :
+Sur chaque machine, il faut lancer FSX. Dans le menu principal, selectionner l'appareil et l'emplacement.
+Cliquer sur enregister et donner un nom à ce vol. Ne pas oublier de cocher la case "Definir ce vol comme le vol par defaut".
+Il faut faire de même sur chacune des machines.
+
+Afficher le tableau de bord :
+Si la barre des menu est invisible, appuyer sur alt.
+Selectionner un tableau de borddans Vues>Tableau de bord>Tableau de bord
+Puis clique droit et la fenetre si la fenetre n'est pas detaché.
+Vous pouvez maintenant faire glisser le tableau de bord sur un autre ecran si il y en à un.
+
+
+Informations supplémentaire:
+La touche P permet de faire pause et la combinaison "alt+entree" d'enlever le plein ecran.
+
+Le cameraTool.exe permet de deplacer la camera, d'en voir les valeurs pour ensuite modifier safe.cfg avec les bonnes valeurs.
+Pour chacune des commandes de cameraTool.exe, il faut maintenir "ctrl+w". Par ex "ctrl+w+u" oriente la camera vers la gauche
+u:oriente la camera vers la gauche
+o: vers la droite
+i: avance la camera
+k : recule la camera
+j: decale la camera vers la gauche
+l : decale la camera vers la droite
+
+
+
+Important:
+Ne pas oublier de configurer les adresses IP, brancher les machines en reseau et faire en sorte que les addressent correspondent avec le safe.cfg
+Si les programmes demarrent puis s'arretent immediatment, cela vient probablement du fichier "safe.cfg".
+Les addons(server,client et CameraTool) doivent etre demarrer avant que le vol ne soit lancer mais apres que fsx soit lancer (si demarrage non automatique)
+
+A regarder:
+Peut servir pour optimiser l'affichage : https://sites.google.com/site/101pilotwings/microsoft-flight-simulat/trucs-et-astuces-pour-fsx-3
