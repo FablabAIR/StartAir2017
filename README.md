@@ -6,3 +6,4 @@ We use Meteor with Apache Cordova to show on any type support, but we will use m
 to get back the informations and ensure to send at any people simply we will do that with Mosquitto (MQQT protocol).
 And in second time it will be interesting to observe this DB (trafic, number of people, ...) by Grafana.
 #Currently the project is in progress.
+You can see the result obtain of the application web with the two files jpeg (capt2.jpg, capt3.jpg)
